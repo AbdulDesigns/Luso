@@ -1,0 +1,114 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "epilogue", sans-serif;
+  background-color: #f6f6f6;
+}
+
+/* navbar styling */
+
+.navContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 120px;
+  background-color: #fff;
+  height: 70px;
+  z-index: 100;
+  margin-bottom: 16px;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.068);
+}
+.navList {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navList li {
+  list-style: none;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.navList li a {
+  text-decoration: none;
+  color: black;
+}
+.navList li img {
+  width: 100px;
+}
+
+/* hero container styling */
+main {
+  padding: 0px 24px;
+}
+.heroContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  height: 90vh;
+  background-image: url("./Images/background.jpeg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+/* hero top styling */
+.heroTop {
+  padding: 0px 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  height: 72px;
+}
+.topLeft {
+  width: 200px;
+}
+
+.heroTop ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.heroTop ul li {
+  list-style: none;
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: 8px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heroTop ul li:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.topRight {
+  max-width: 250px;
+}
+.topRight p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4rem;
+  opacity: 0.8;
+  text-align: right;
+}
