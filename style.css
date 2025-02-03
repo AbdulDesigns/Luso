@@ -233,15 +233,18 @@ main {
   color: #141414;
   text-align: center;
 }
+.servicesTitle h1 {
+  font-weight: 800;
+}
 .servicesSub {
   display: flex;
-  padding: 0px 230px;
+  padding: 0px 60px;
   justify-content: space-between;
   align-items: center;
   color: #4b4b4b;
   width: 100%;
 }
-ss .leftSub {
+.leftSub {
   width: 250px;
   font-size: 1.1rem;
   line-height: 1.5rem;
@@ -256,7 +259,7 @@ ss .leftSub {
 }
 .servicesLine {
   width: 40%;
-  background-color: rgba(255, 187, 0, 0.17);
+  background-color: rgba(255, 187, 0, 0.542);
   height: 2px;
 }
 
@@ -266,17 +269,18 @@ ss .leftSub {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
   width: 100%;
   padding: 16px 0;
 }
+
 .left-service {
   background-image: url("./Images/tile.png");
   background-size: cover;
   background-position: center;
   height: 480px;
-  width: 25%;
-  border-radius: 16px;
+  width: 33%;
+  border-radius: 24px;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -287,7 +291,52 @@ ss .leftSub {
   background-color: transparent;
   border: 1px solid #fff;
   color: white;
-  padding: 12px 24px;
+  padding: 20px 56px;
+  border-radius: 32px;
+  margin-top: 32px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.services-button:hover {
+  background-color: #ffffff4b;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  --webkit-backdrop-filter: blur(10px);
+  transition: all 0.6s ease;
+}
+
+.middle-service {
+  background-image: url("./Images/tile 2.png");
+  background-size: cover;
+  background-position: center;
+  height: 480px;
+  width: 33%;
   border-radius: 24px;
-  margin-top: 24px;
+  overflow: hidden;
+}
+
+.right-service {
+  display: flex;
+  width: 33%;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 480px;
+  border-radius: 24px;
+  overflow: hidden;
+  gap: 10px;
+}
+
+.right-service .right-top {
+  background-color: #fa6a6a;
+  height: 50%;
+  border-radius: 24px;
+  padding: 16px;
+}
+
+.right-service .right-bottom {
+  background-color: #d0d0d0;
+  height: 50%;
+  border-radius: 24px;
+  padding: 16px;
 }
