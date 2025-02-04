@@ -364,7 +364,7 @@ main {
 }
 
 .right-service .right-top {
-  background-color: #fa6a6a;
+  background-color: rgb(255, 250, 243);
   height: 50%;
   border-radius: 24px;
   padding: 16px;
@@ -375,4 +375,8 @@ main {
   height: 50%;
   border-radius: 24px;
   padding: 16px;
+}
+
+.right-top-content {
+  width: 60%;
 }
