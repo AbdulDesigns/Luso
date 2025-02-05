@@ -5,9 +5,16 @@
   box-sizing: border-box;
 }
 
+:root {
+  --container-width: 1400px;
+  --subtle-cream: #fdf4ec;
+  --dark-cream: #a8987c;
+  --dark-text: #150e03;
+}
+
 body {
   font-family: "inter", sans-serif;
-  background-color: #f6f6f6;
+  background-color: #ffffff;
 }
 
 /* navbar styling */
@@ -259,7 +266,7 @@ main {
 }
 .servicesLine {
   width: 40%;
-  background-color: rgba(255, 187, 0, 0.542);
+  background-color: var(--dark-cream);
   height: 2px;
 }
 
@@ -364,19 +371,96 @@ main {
 }
 
 .right-service .right-top {
-  background-color: rgb(255, 250, 243);
+  background-color: var(--subtle-cream);
   height: 50%;
   border-radius: 24px;
-  padding: 16px;
+  padding: 24px;
+  position: relative;
 }
 
-.right-service .right-bottom {
-  background-color: #d0d0d0;
-  height: 50%;
-  border-radius: 24px;
-  padding: 16px;
-}
-
-.right-top-content {
+.right-top .right-top-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
   width: 60%;
+}
+.right-top-content .rt-img {
+  position: absolute;
+  width: 150px;
+  top: 0;
+  right: 0;
+  margin: 16px;
+}
+
+.right-top-content .rt-icon i {
+  font-size: 2rem;
+  border: 2px solid var(--dark-cream);
+  border-radius: 50%;
+  color: var(--dark-cream);
+  padding: 8px;
+  margin-bottom: 12px;
+}
+
+.right-top-content h3 {
+  color: var(--dark-text);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.right-top-content p {
+  color: var(--dark-cream);
+  font-weight: 300;
+  line-height: 1.3rem;
+}
+
+.right-bottom {
+  background-color: var(--subtle-cream);
+  height: 50%;
+  border-radius: 24px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 6px;
+  overflow: hidden;
+  position: relative;
+}
+
+.right-bottom .right-bottom-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 6px;
+  width: 60%;
+}
+.right-bottom .rb-icon i {
+  font-size: 2rem;
+  border: 2px solid var(--dark-cream);
+  border-radius: 50%;
+  color: var(--dark-cream);
+  padding: 8px;
+  margin-bottom: 12px;
+}
+
+.right-bottom-content h3 {
+  color: var(--dark-text);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.right-bottom-content p {
+  color: var(--dark-cream);
+  font-weight: 300;
+  text-align: right;
+  line-height: 1.3rem;
+  text-align: right;
+}
+
+.right-bottom-content .rb-img {
+  position: absolute;
+  width: 130px;
+  top: 0;
+  left: 0;
+  margin: 16px;
 }
