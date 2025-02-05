@@ -225,7 +225,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 70vh;
 }
 
 .servicesHeader {
@@ -268,6 +267,7 @@ main {
   width: 40%;
   background-color: var(--dark-cream);
   height: 2px;
+  opacity: 0.4;
 }
 
 /* services cards styling */
@@ -463,4 +463,101 @@ main {
   top: 0;
   left: 0;
   margin: 16px;
+}
+
+/* about section styling */
+.about {
+  width: 100%;
+  height: 100vh;
+}
+
+.about-header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 24px;
+}
+
+.about-left-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+}
+
+.about-left-header h1 {
+  font-size: 15rem;
+  font-weight: 800;
+  color: var(--dark-text);
+  letter-spacing: -15px;
+}
+
+.about-right-header {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 50%;
+  padding: 1rem;
+}
+
+.about-rt-content {
+  border-bottom: 1px solid var(--dark-cream);
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.about-right-header .about-rt-content p {
+  font-size: 1rem;
+  color: var(--dark-cream);
+  line-height: 1.5rem;
+}
+
+.about-rb-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.about-rb-content .header-btn {
+  padding: 16px 30px;
+  border-radius: 2rem;
+  border: 1px solid var(--dark-text);
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--dark-text);
+  font-size: 1.1rem;
+}
+
+.about-rb-content p {
+  text-align: right;
+  font-size: 1rem;
+  color: var(--dark-cream);
+  line-height: 1.5rem;
+}
+
+.about-content {
+  width: 100%;
+  position: relative;
+}
+
+.about-content-container video {
+  border-radius: 16px;
+}
+
+.about-content-text {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  z-index: 99;
+  width: 20%;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: var(--subtle-cream);
+  opacity: 0.9;
 }
