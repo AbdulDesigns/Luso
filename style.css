@@ -545,19 +545,43 @@ main {
   width: 100%;
   position: relative;
 }
-
+.about-content-container {
+  padding: 2rem 0;
+}
 .about-content-container video {
-  border-radius: 16px;
+  border-radius: 2rem;
+  box-shadow: 0px 0px 105px rgba(121, 111, 64, 0.343);
 }
 
 .about-content-text {
   position: absolute;
-  top: 50px;
-  left: 50px;
+  top: 5rem;
+  left: 5rem;
   z-index: 99;
   width: 20%;
   font-size: 1.2rem;
   line-height: 1.6rem;
   color: var(--subtle-cream);
   opacity: 0.9;
+}
+
+.about-content-overlay {
+  position: absolute;
+  bottom: 5rem;
+  left: 5rem;
+  font-size: 12rem;
+  font-weight: 900;
+  letter-spacing: -10px;
+  color: var(--subtle-cream);
+  mix-blend-mode: overlay;
+  opacity: 0.7;
+  line-height: 10rem;
+}
+
+.about-content-right {
+  position: absolute;
+  top: 50%;
+  right: 5rem;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.828);
 }
