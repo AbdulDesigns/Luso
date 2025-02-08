@@ -487,10 +487,10 @@ main {
 }
 
 .about-left-header h1 {
-  font-size: 15rem;
+  font-size: 14rem;
   font-weight: 800;
   color: var(--dark-text);
-  letter-spacing: -15px;
+  letter-spacing: -13px;
 }
 
 .about-right-header {
@@ -511,7 +511,7 @@ main {
 }
 
 .about-right-header .about-rt-content p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: var(--dark-cream);
   line-height: 1.5rem;
 }
@@ -536,7 +536,7 @@ main {
 
 .about-rb-content p {
   text-align: right;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: var(--dark-cream);
   line-height: 1.5rem;
 }
@@ -584,4 +584,74 @@ main {
   right: 5rem;
   text-align: right;
   color: rgba(255, 255, 255, 0.828);
+}
+
+/* property tiles styling */
+property-tiles {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.property-header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 32px;
+}
+
+.property-left-header {
+  width: 100%;
+}
+
+.property-lt-content {
+  border-bottom: 1px solid var(--dark-cream);
+  padding: 2rem 0;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 100%;
+}
+
+.property-lb-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.property-lb-content .header-btn {
+  padding: 16px 30px;
+  border-radius: 2rem;
+  border: 1px solid var(--dark-text);
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--dark-text);
+  font-size: 1.1rem;
+}
+
+.property-lt-content p {
+  text-align: right;
+  font-size: 1.2rem;
+  color: var(--dark-cream);
+  line-height: 1.5rem;
+}
+
+.property-lb-content p {
+  font-size: 1.2rem;
+  color: var(--dark-cream);
+  line-height: 1.5rem;
+}
+
+.property-right-header {
+  width: 100%;
+}
+.property-right-header h1 {
+  font-size: 13rem;
+  font-weight: 800;
+  color: var(--dark-text);
+  letter-spacing: -13px;
 }
