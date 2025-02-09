@@ -17,6 +17,116 @@ body {
   background-color: #ffffff;
 }
 
+/* utility classes */
+.t-right {
+  text-align: right;
+}
+.t-center {
+  text-align: center;
+}
+.t-left {
+  text-align: left;
+}
+.bt-color-dark {
+  color: var(--dark-cream) !important;
+}
+.bt-color-light {
+  color: var(--subtle-cream) !important;
+}
+
+.bt-color-white {
+  color: #fff !important;
+}
+.mb-0 {
+  margin-bottom: 8px;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+.mb-4 {
+  margin-bottom: 4rem;
+}
+.mb-6 {
+  margin-bottom: 6rem;
+}
+.txt-1 {
+  font-size: 1rem;
+}
+.txt-2 {
+  font-size: 1.5rem;
+}
+.txt-3 {
+  font-size: 2rem;
+}
+.txt-4 {
+  font-size: 2.5rem;
+}
+
+/* display styling */
+.d-flex {
+  display: flex;
+}
+.d-grid {
+  display: grid;
+}
+.jc-center {
+  justify-content: center;
+}
+.jc-start {
+  justify-content: flex-start;
+}
+.jc-end {
+  justify-content: flex-end;
+}
+.ai-center {
+  align-items: center;
+}
+.ai-start {
+  align-items: flex-start;
+}
+.ai-end {
+  align-items: flex-end;
+}
+.jc-space-between {
+  justify-content: space-between;
+}
+.jc-space-around {
+  justify-content: space-around;
+}
+.jc-space-evenly {
+  justify-content: space-evenly;
+}
+.ai-space-between {
+  align-items: space-between;
+}
+.ai-space-around {
+  align-items: space-around;
+}
+.ai-space-evenly {
+  align-items: space-evenly;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
 /* navbar styling */
 
 .navContainer {
@@ -591,6 +701,8 @@ property-tiles {
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
@@ -600,6 +712,7 @@ property-tiles {
   justify-content: flex-start;
   align-items: center;
   gap: 32px;
+  margin-bottom: 2rem;
 }
 
 .property-left-header {
@@ -650,8 +763,122 @@ property-tiles {
   width: 100%;
 }
 .property-right-header h1 {
-  font-size: 13rem;
+  font-size: 12.5rem;
   font-weight: 800;
   color: var(--dark-text);
   letter-spacing: -13px;
+}
+
+/* tiles styling */
+
+.property-tiles-container {
+  width: 100%;
+  height: 100%;
+  background-color: var(--subtle-cream);
+  padding: 1rem 0;
+}
+.property-tiles-inner-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 420px;
+  gap: 16px;
+}
+
+.tile {
+  border: 1px solid var(--dark-cream);
+  border-radius: 1.5rem;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.tile:nth-child(even) {
+  background-color: white;
+}
+
+.relative {
+  position: relative;
+}
+
+.arrow-style {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border: 2px solid var(--subtle-cream);
+  color: var(--subtle-cream);
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  rotate: -45deg;
+}
+
+.property-tiles-1 {
+  background-image: url(./Images/tile1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.property-tiles-2 {
+  background-color: white;
+  position: relative;
+}
+.tile h2 {
+  color: var(--dark-text);
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+.tile p {
+  font-size: 1rem;
+  font-weight: 300;
+  width: 80%;
+}
+.tile-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.property-tiles-3 {
+  background-image: url(./Images/tile3.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.property-tiles-5 {
+  background-color: white;
+}
+.property-tiles-6 {
+  background-image: url(./Images/tile-orange-fern.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.property-tiles-7 {
+  background-image: url(./Images/tile-chair-blue.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.property-tiles-8 {
+  background-image: url(./Images/tile5.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.property-tiles-9 {
+  background-image: url(./Images/tile8.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.property-tiles-10 {
+  background-image: url(./Images/tile-white-wall.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.property-tiles-10 i {
+  border: 2px solid var(--dark-cream);
+}
+
+.property-tiles-12 {
+  background-image: url(./Images/tile-12.jpg);
+  background-position: center;
+  background-size: cover;
 }
