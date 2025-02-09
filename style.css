@@ -57,7 +57,7 @@ main {
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
-  height: 70vh;
+  height: 90vh;
   background-image: url("./Images/background.jpeg");
   background-position: center;
   background-size: cover;
@@ -184,6 +184,7 @@ main {
   line-height: 1.6rem;
   opacity: 0.8;
   font-style: italic;
+  width: 250px;
 }
 .bottomRightContainer {
   width: 30%;
@@ -222,6 +223,7 @@ main {
 
 .servicesHeader {
   width: 100%;
+  margin-bottom: 32px;
 }
 
 .servicesTitle {
@@ -233,21 +235,20 @@ main {
 }
 .servicesSub {
   display: flex;
-  padding: 0px 60px;
+  padding: 0px 230px;
   justify-content: space-between;
   align-items: center;
   color: #4b4b4b;
   width: 100%;
 }
-
-.leftSub {
-  width: 27%;
+ss .leftSub {
+  width: 250px;
   font-size: 1.1rem;
   line-height: 1.5rem;
   font-weight: 400;
 }
 .rightSub {
-  width: 27%;
+  width: 300px;
   text-align: right;
   font-size: 1.1rem;
   line-height: 1.5rem;
@@ -257,4 +258,36 @@ main {
   width: 40%;
   background-color: rgba(255, 187, 0, 0.586);
   height: 2px;
+}
+
+/* services cards styling */
+
+.servicesGrid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  padding: 16px 0;
+}
+.left-service {
+  background-image: url("./Images/tile.png");
+  background-size: cover;
+  background-position: center;
+  height: 480px;
+  width: 25%;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.services-button {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 24px;
+  margin-top: 24px;
 }
