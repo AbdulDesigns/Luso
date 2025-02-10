@@ -908,6 +908,7 @@ property-tiles {
   color: var(--dark-cream);
   line-height: 1.5rem;
   text-align: right;
+  width: 30%;
 }
 
 /* footer styling */
