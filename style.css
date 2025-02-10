@@ -1035,7 +1035,8 @@ footer {
 .footer-sm-links {
   display: flex;
   justify-content: space-between;
-  width: 60%;
+  width: 50%;
+  max-width: 60%;
 }
 .footer-sm-container {
   display: flex;
