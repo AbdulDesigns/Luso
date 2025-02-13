@@ -148,6 +148,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: var(--container-width);
 }
 
 .navList li {
@@ -186,8 +187,10 @@ main {
 
 /* hero top styling */
 .heroTop {
-  padding: 0px 40px;
+  /* padding: 0px 40px; */
+
   width: 100%;
+  max-width: var(--container-width);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -239,6 +242,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 120px;
 }
 .heroSearchBarContent {
   width: 50%;
@@ -278,8 +282,9 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 40px;
+  /* padding: 0px 40px; */
   color: #fff;
+  max-width: var(--container-width);
 }
 
 .bottomLeftContainer {
@@ -340,6 +345,7 @@ main {
 .servicesHeader {
   width: 100%;
   margin-bottom: 32px;
+  max-width: var(--container-width);
 }
 
 .servicesTitle {
@@ -354,7 +360,7 @@ main {
 }
 .servicesSub {
   display: flex;
-  padding: 0px 60px;
+  /* padding: 0px 60px; */
   justify-content: space-between;
   align-items: center;
   color: #4b4b4b;
@@ -389,13 +395,15 @@ main {
   gap: 10px;
   width: 100%;
   padding: 16px 0;
+  max-width: var(--container-width);
+  height: 620px;
 }
 
 .left-service {
   background-image: url("./Images/tile.png");
   background-size: cover;
   background-position: center;
-  height: 480px;
+  height: 100%;
   width: 33%;
   border-radius: 24px;
   overflow: hidden;
@@ -429,7 +437,7 @@ main {
   background-image: url("./Images/tile 2.png");
   background-size: cover;
   background-position: center;
-  height: 480px;
+  height: 100%;
   width: 33%;
   border-radius: 24px;
   overflow: hidden;
@@ -474,7 +482,7 @@ main {
   width: 33%;
   flex-direction: column;
   justify-content: space-between;
-  height: 480px;
+  height: 100%;
   border-radius: 24px;
   overflow: hidden;
   gap: 10px;
@@ -579,6 +587,9 @@ main {
 .about {
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about-header {
@@ -587,6 +598,7 @@ main {
   justify-content: flex-start;
   align-items: center;
   gap: 24px;
+  max-width: var(--container-width);
 }
 
 .about-left-header {
@@ -706,13 +718,21 @@ property-tiles {
   justify-content: center;
 }
 
+.property-header-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .property-header {
   width: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   gap: 32px;
   margin-bottom: 2rem;
+  max-width: var(--container-width);
 }
 
 .property-left-header {
@@ -775,12 +795,15 @@ property-tiles {
   width: 100%;
   height: 100%;
   padding: 1rem 0;
+  display: flex;
+  justify-content: center;
 }
 .property-tiles-inner-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 420px;
   gap: 16px;
+  max-width: var(--container-width);
 }
 
 .tile {
@@ -895,6 +918,7 @@ property-tiles {
   justify-content: space-between;
   align-items: center;
   gap: 64px;
+  max-width: var(--container-width);
 }
 
 .subscribe-inner h1 {
@@ -928,12 +952,17 @@ footer {
   border-radius: 1rem 1rem 0 0;
   margin-top: 1rem;
 }
-
+.footer-links-inner-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 .footer-subscribe-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 64px;
+
 }
 
 .footer-left-subscribe {
