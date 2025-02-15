@@ -1331,6 +1331,15 @@ footer {
     height: auto;
     padding: 0;
   }
+  .footer-contact {
+    width: 100%;
+    align-items: center;
+  }
+  .footer-contact h3 {
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
   .footer-container {
     padding: 1rem;
   }
@@ -1339,6 +1348,7 @@ footer {
   }
   .footer-subscribe-container {
     flex-direction: column-reverse;
+    gap: 2rem;
   }
   .footer-right-subscribe {
     width: 100%;
@@ -1346,6 +1356,7 @@ footer {
   .footer-right-subscribe img {
     display: flex;
     align-self: center;
+    width: 100%;
   }
 
   .footer-right-subscribe p {
@@ -1356,8 +1367,44 @@ footer {
   .footer-left-subscribe {
     max-width: 100%;
     text-align: center;
+    align-items: center;
+  }
+  .footer-left-subscribe p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    max-width: 90%;
   }
   .input-container {
     padding: 0 8px;
+    width: 100%;
+  }
+
+  .footer-links-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+  .footer-sm-links {
+    width: 100%;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .footer-sm-container {
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+  }
+  .footer-sm-container h3 {
+    font-size: 1.5rem;
+  }
+
+  .footer-sm-container ul {
+    align-items: center;
+  }
+  .footer-sm-container ul li {
+    font-size: 1.2rem;
   }
 }
