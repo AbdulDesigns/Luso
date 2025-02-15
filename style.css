@@ -1325,4 +1325,39 @@ footer {
     width: 100%;
     text-align: center;
   }
+
+  /*footer styling */
+  footer {
+    height: auto;
+    padding: 0;
+  }
+  .footer-container {
+    padding: 1rem;
+  }
+  .footer-links-inner-container {
+    gap: 4rem;
+  }
+  .footer-subscribe-container {
+    flex-direction: column-reverse;
+  }
+  .footer-right-subscribe {
+    width: 100%;
+  }
+  .footer-right-subscribe img {
+    display: flex;
+    align-self: center;
+  }
+
+  .footer-right-subscribe p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-left-subscribe {
+    max-width: 100%;
+    text-align: center;
+  }
+  .input-container {
+    padding: 0 8px;
+  }
 }
