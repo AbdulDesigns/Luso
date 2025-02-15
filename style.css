@@ -1279,6 +1279,9 @@ footer {
   .property-header-container {
     flex-direction: column;
   }
+  .tile {
+    border: 1px solid var(--subtle-cream);
+  }
 
   .property-tiles {
     margin-bottom: 0;
