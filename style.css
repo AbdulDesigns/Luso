@@ -129,13 +129,21 @@ body {
 
 /* navbar styling */
 
+header {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background-color: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+}
 .navContainer {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0px 120px;
-  background-color: #fff;
+
   height: 70px;
   z-index: 100;
   margin-bottom: 16px;
