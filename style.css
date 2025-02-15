@@ -1213,6 +1213,9 @@ footer {
   .right-bottom {
     justify-content: center;
   }
+  .right-bottom-content {
+    align-items: flex-end;
+  }
   .right-service h3 {
     font-size: 1.4rem;
   }
