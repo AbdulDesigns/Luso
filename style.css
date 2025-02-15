@@ -1091,3 +1091,188 @@ footer {
   color: var(--dark-cream);
   font-weight: 400;
 }
+
+/* responsive for mobile */
+
+@media only screen and (max-width: 450px) {
+  /* navigation */
+  .navContainer {
+    padding: 1rem 0;
+    height: auto;
+  }
+
+  .navList {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .navList li {
+    padding: 10px 32px;
+    text-align: center;
+  }
+
+  .navList li a {
+    text-align: center;
+  }
+
+  /* hero container styling */
+  .heroContainer {
+    gap: 5rem;
+    height: auto;
+    padding: 24px;
+  }
+
+  .heroTop {
+    flex-direction: column;
+    gap: 1rem;
+    height: auto;
+  }
+
+  .heroTop .topRight {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .heroTop > .topRight p {
+    text-align: center;
+    width: 100%;
+  }
+
+  .heroSearchContainer .heroSearchBarContent {
+    width: 100%;
+  }
+  .heroBottom {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .heroBottom .bottomLeftContainer {
+    width: 100%;
+    align-items: center;
+  }
+
+  .bottomLeftContent {
+    text-align: center;
+    width: 100%;
+  }
+  .bottomRightContainer {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .bottomRightContainer ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0;
+  }
+
+  /* services container */
+  .servicesContainer {
+    padding: 1rem 0;
+  }
+  .servicesHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .servicesTitle {
+    font-size: 4rem;
+    letter-spacing: -7px;
+  }
+  .servicesTitle h1 {
+    font-weight: bolder;
+    margin-left: -7px !important;
+  }
+  .servicesSub {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .leftSub {
+    width: 80%;
+    text-align: center;
+  }
+  .rightSub {
+    width: 80%;
+    text-align: center;
+  }
+  .servicesGrid {
+    flex-direction: column;
+    height: auto;
+    gap: 16px;
+  }
+
+  .left-service,
+  .middle-service,
+  .right-service {
+    width: 100%;
+    height: 440px;
+  }
+
+  .right-service .right-bottom {
+    justify-content: center;
+  }
+  .right-service h3 {
+    font-size: 1.4rem;
+  }
+
+  /* about section styling */
+  .about-header {
+    flex-direction: column;
+  }
+
+  .about-left-header {
+    width: 100%;
+  }
+  .about-left-header h1 {
+    width: 100%;
+    font-size: 6rem;
+    text-align: center;
+    letter-spacing: -5px;
+  }
+  .about-right-header {
+    width: 100%;
+    align-content: center;
+  }
+  .about-rt-content {
+    justify-content: center;
+  }
+  .about-rb-content {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+  .header-btn {
+    width: 80%;
+    padding: 24px 32px !important;
+  }
+  .about-content {
+    height: 480px;
+  }
+  .about-content-container {
+    padding: 0;
+    height: 100%;
+  }
+  .about-content-container video {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .about-content-overlay {
+    font-size: 8rem;
+    bottom: 1rem;
+    left: 1rem;
+    line-height: 7rem;
+  }
+  .about-content-text {
+    width: 100%;
+    top: 8px;
+    left: 0;
+    margin: 0 auto;
+    text-align: center;
+    padding: 3rem;
+  }
+
+  .about-content-right {
+    visibility: hidden;
+  }
+}
