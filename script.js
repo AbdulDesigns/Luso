@@ -21,7 +21,7 @@ function changeIcon() {
 //menu drawer open functionality
 menuIcon.addEventListener("click", () => {
   //   navLists.style.transform = "translate(0,0)";
-  navLists.style.transition = "transform 0.5s ease";
+  navLists.style.transition = "right 0.5s ease";
   //   setTimeout(() => {
   //     navLists.style.transform = "translate(600px, 0)";
   //   }, 20000);
@@ -29,4 +29,3 @@ menuIcon.addEventListener("click", () => {
   navLists.classList.toggle("menu-visible");
   changeIcon();
 });
-

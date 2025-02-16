@@ -1146,16 +1146,14 @@ footer {
   }
 
   .menu-visible {
-    transform: translateX(0px) !important;
-    -webkit-backdrop-filter: blur(40px) !important;
-    backdrop-filter: blur(40px) !important;
+    right: 0% !important;
   }
   /* navigation */
 
   .mobile-toggle {
     position: absolute;
     top: 84px;
-    transform: translateX(600px);
+    right: -100%;
     width: 80%;
     align-self: flex-end;
     background: rgba(255, 255, 255, 0.979);
@@ -1163,6 +1161,7 @@ footer {
     border-radius: 0 0 0 16px;
     z-index: 99999999 !important;
     padding: 1rem 0;
+    transition: all 1s ease;
   }
 
   .mobile-menu {
@@ -1273,7 +1272,7 @@ footer {
     justify-content: center;
   }
   .servicesTitle h1 {
-    font-size: 100vw;
+    font-size: 4.5rem;
     display: block;
     width: 100%;
     font-weight: 900;
