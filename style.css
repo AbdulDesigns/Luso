@@ -1132,7 +1132,7 @@ footer {
 @media only screen and (max-width: 450px) {
   body {
     position: relative;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
   }
 
   header {
@@ -1258,9 +1258,7 @@ footer {
   }
 
   /* services container */
-  body {
-    overflow-x: hidden;
-  }
+
   .servicesContainer {
     padding: 1rem 0;
   }
