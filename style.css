@@ -136,8 +136,8 @@ header {
   top: 0;
   z-index: 9999;
   background-color: rgba(255, 255, 255, 0.7);
-  -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
 }
 .navContainer {
   width: 100%;
@@ -145,13 +145,10 @@ header {
   justify-content: center;
   align-items: center;
   padding: 0px 120px;
-
   height: 70px;
   z-index: 100;
   margin-bottom: 16px;
-  position: sticky;
-  top: 0;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.068);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 .navList {
   width: 100%;
@@ -365,11 +362,11 @@ main {
   text-align: center;
 }
 .servicesTitle h1 {
-  font-weight: 800;
+  font-weight: 900;
 }
 .servicesSub {
   display: flex;
-  padding: 0px 60px;
+  padding: 0px 40px;
   justify-content: space-between;
   align-items: center;
   color: #4b4b4b;
@@ -675,6 +672,7 @@ main {
 .about-content {
   width: 100%;
   position: relative;
+  max-width: var(--container-width);
 }
 .about-content-container {
   padding: 2rem 0;
@@ -947,8 +945,8 @@ property-tiles {
 
 /* footer styling */
 footer {
-  padding: 0px 24px;
-  height: 560px;
+  padding: 16px 0;
+  height: auto;
   max-height: 800px;
 }
 .footer-container {
@@ -973,7 +971,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 64px;
+  gap: 32px;
   width: 100%;
 }
 
@@ -1107,6 +1105,9 @@ footer {
 /* responsive for mobile */
 
 @media only screen and (max-width: 450px) {
+  header {
+    position: static;
+  }
   /* navigation */
   .navContainer {
     padding: 1rem 0;
@@ -1148,6 +1149,10 @@ footer {
   .heroTop > .topRight p {
     text-align: center;
     width: 100%;
+  }
+
+  .heroSearchBar {
+    padding: 1.5rem 2rem;
   }
 
   .heroSearchContainer .heroSearchBarContent {
