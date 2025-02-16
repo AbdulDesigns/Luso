@@ -1135,11 +1135,11 @@ footer {
 
   .mobile-toggle {
     position: absolute;
-    top: 81px;
+    top: 83px;
     transform: translate(600px, 0);
     width: 80%;
     align-self: flex-end;
-    background-color: #fff;
+    background-color: #fffffff3;
     height: 600px !important;
   }
 
