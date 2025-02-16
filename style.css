@@ -1130,17 +1130,26 @@ footer {
   header {
     position: relative;
   }
-
+  .menu-visible {
+    transform: translateX(0px) !important;
+    -webkit-backdrop-filter: blur(40px) !important;
+    backdrop-filter: blur(40px) !important;
+  }
   /* navigation */
 
   .mobile-toggle {
     position: absolute;
-    top: 83px;
-    transform: translate(600px, 0);
+    top: 84px;
+    transform: translateX(600px);
     width: 80%;
     align-self: flex-end;
-    background-color: #fffffff3;
-    height: 600px !important;
+    background: rgba(255, 255, 255, 0.979);
+    height: 400px !important;
+    border-radius: 8px;
+    -webkit-backdrop-filter: blur(10px) !important;
+    backdrop-filter: blur(10px) !important;
+    z-index: 99999999 !important;
+    padding: 1rem 0;
   }
 
   .mobile-menu {
@@ -1155,11 +1164,12 @@ footer {
 
   .navList {
     flex-direction: column;
-    gap: 8px;
+    gap: 48px;
     overflow: hidden;
     min-height: 200px;
     transition: height 1s ease;
     z-index: 999000;
+    justify-content: flex-start;
   }
 
   .navList li {
