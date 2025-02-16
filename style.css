@@ -17,6 +17,7 @@
 body {
   font-family: "inter", sans-serif;
   background-color: #ffffff;
+  overflow-x: hidden;
 }
 
 /* utility classes */
