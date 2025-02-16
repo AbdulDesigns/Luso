@@ -171,6 +171,28 @@ header {
   width: 100px;
 }
 
+/* mobile nav container */
+.mobile-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0 24px;
+  display: none;
+}
+
+.mobile-menu ul {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-logo {
+  width: 90px;
+}
+
 /* hero container styling */
 main {
   padding: 0px 24px;
@@ -1106,17 +1128,38 @@ footer {
 
 @media only screen and (max-width: 450px) {
   header {
-    position: static;
+    position: relative;
   }
+
   /* navigation */
+
+  .mobile-toggle {
+    position: absolute;
+    top: 81px;
+    transform: translate(600px, 0);
+    width: 80%;
+    align-self: flex-end;
+    background-color: #fff;
+    height: 600px !important;
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+
   .navContainer {
     padding: 1rem 0;
     height: auto;
+    flex-direction: column;
   }
 
   .navList {
     flex-direction: column;
     gap: 8px;
+    overflow: hidden;
+    min-height: 200px;
+    transition: height 1s ease;
+    z-index: 999000;
   }
 
   .navList li {
@@ -1126,6 +1169,13 @@ footer {
 
   .navList li a {
     text-align: center;
+  }
+  .menu {
+    cursor: pointer;
+  }
+  /* logo removal in mobile view */
+  .navList li:nth-child(3n) {
+    display: none;
   }
 
   /* hero container styling */
