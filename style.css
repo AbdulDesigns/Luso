@@ -1144,26 +1144,14 @@ footer {
     -webkit-backdrop-filter: blur(30px);
     backdrop-filter: blur(30px);
     margin-bottom: 1rem;
+    overflow-x: hidden;
   }
 
   .menu-visible {
-    right: 0% !important;
+    height: 400px !important;
+    transition: height 1s ease;
   }
   /* navigation */
-
-  .mobile-toggle {
-    position: absolute;
-    top: 84px;
-    right: -100%;
-    width: 80%;
-    align-self: flex-end;
-    background: rgba(255, 255, 255, 0.979);
-    height: 400px !important;
-    border-radius: 0 0 0 16px;
-    z-index: 99999999 !important;
-    padding: 1rem 0;
-    transition: all 1s ease;
-  }
 
   .mobile-menu {
     display: flex;
@@ -1177,13 +1165,13 @@ footer {
   }
 
   .navList {
+    height: 0;
     flex-direction: column;
     gap: 48px;
     overflow: hidden;
-    min-height: 200px;
     transition: height 1s ease;
     z-index: 999000;
-    justify-content: flex-start;
+    justify-content: center;
   }
 
   .navList li {
