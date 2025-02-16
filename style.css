@@ -1143,6 +1143,7 @@ footer {
     -webkit-backdrop-filter: blur(30px);
     backdrop-filter: blur(30px);
     margin-bottom: 1rem;
+    overflow-x: hidden;
   }
 
   .menu-visible {
